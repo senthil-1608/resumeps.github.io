@@ -1,1 +1,283 @@
-# resumeps.github.io
+# P S SENTHIL SRINIVAS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Engineering Fresher Resume</title>
+    <style>
+        
+To allow users to click on the "profile.jpg" image to view it individually on the webpage and enable zoom in and zoom out functionality, you can use JavaScript and CSS. Here's an updated version of your HTML code:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Engineering Fresher Resume</title>
+    <style>
+        /* ... (Your existing CSS styles) ... */
+
+        /* Styling for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 800px;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Close button for the modal */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Stylish top navigation bar */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #555;
+        }
+
+        /* Background image */
+        body {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+        }
+                /* Photo */
+                .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .photo img {
+            width: 150px; /* Adjust the size of your photo */
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+                /* Contact Icons */
+                .contact-icons {
+            text-align:left;
+        }
+
+        .contact-icons img {
+            width: 30px; /* Adjust the size of the icons */
+            margin-right: 10px;
+        }
+                /* Your existing CSS styles for both light and dark modes */
+
+        /* Additional styles for dark mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .topnav.dark-mode {
+            background-color: #111;
+        }
+
+        /* ... (Other dark mode styles) ... */
+
+        /* Styles for the mode toggle image */
+        #mode-toggle {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a href="#contact">Contact</a>
+            <a href="#objective">Objective</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#interests">Interests</a>
+        </div>
+        <div class="photo">
+            <img src="profile.jpg" alt="Your Photo">
+        </div>
+
+        <header>
+            <h1>P S SENTHIL SRINIVAS</h1>
+            <p>Engineering Fresher</p>
+        </header>
+
+        <section class="section" id="contact">
+            <h2>Contact Information</h2>
+            <p> <div class="contact-icons">
+                <img src="mail.png" alt="Email">communicatetosenthilsrinivas@gmail.com
+            </div></p>
+            <p> <div class="contact-icons"><img src="phone.jpeg" alt="Phone">+91 9092573000</div></t></p>
+            <p> <div  class="contact-icons"><img src="linkedin.jpeg" alt="LinkedIn"><a href="https://www.linkedin.com/in/senthil-srinivas-30b903230" target="_blank">LinkedIn Profile</a></div></p>
+        </section>
+
+        <section class="section" id="objective">
+            <h2>Objective</h2>
+            <p> I am a budding engineer looking forward to be a part of shaping the world better through my critical thinking and problem solving skills.I look forward learning at every point of life to equip my self and explore various fields of engineering and create a remarkable change in the society.</p>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <p>Bachelor Engineering-ECE</p>
+            <p>Sri Saiarm Engineering College, 2025 <b>8.87</b></p>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <p>AUTOMATA BIN</p>
+            <ul>
+                <li>---------------------------------------------------------------------------------</li>
+            </ul>
+            <p>A voice prosthetic for voiceless</p>
+            <ul>
+                <li>----------------------------------------------------------------------------------</li>
+            </ul>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages:<br>*c<br>*python<br>*html<br>*css</li>
+                <li>Technical Skills: Mention relevant technical skills.</li>
+                <li>Soft Skills: Include communication, teamwork, etc.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="certifications">
+            <h2>Certifications</h2>
+            <p>Certification Name, Issuing Organization, Year</p>
+        </section>
+
+        <section class="section" id="interests">
+            <h2>Interests</h2>
+            <p>List your hobbies and interests here.</p>
+        </section>
+
+    </div>
+    <div class="photo">
+        <!-- Add an onclick event to open the modal when clicking on the image -->
+        <img src="profile.jpg" alt="Your Photo" onclick="openModal()">
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img src="profile.jpg" alt="Your Photo">
+        </div>
+    </div>
+
+    <img id="mode-toggle" src="but.jpeg" alt="Mode Toggle" onclick="toggleDarkMode()">
+    
+    <script>
+        
+        // JavaScript function to toggle between light and dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            var topnav = document.querySelector('.topnav');
+            
+            // Toggle the 'dark-mode' class on the body
+            body.classList.toggle('dark-mode');
+            
+            // Toggle the 'dark-mode' class on the topnav
+            topnav.classList.toggle('dark-mode');
+            
+            // Update the image source based on the current mode
+            var modeToggleImage = document.getElementById('light');
+            if (body.classList.contains('dark-mode')) {
+                modeToggleImage.src = 'but_light.jpeg';
+            } else {
+                modeToggleImage.src = 'but.jpeg';
+            }
+        }
+    </script>
+</body>
+</html>
